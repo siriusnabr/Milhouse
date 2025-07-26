@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milhouse</title>
+    <title>Blog do Milhouse - Reflexões e Aventuras</title>
+    <meta name="description" content="Blog do Milhouse - Um espaço para compartilhar reflexões, aventuras e momentos especiais da vida.">
+    <meta name="keywords" content="Milhouse, blog, reflexões, aventuras, vida">
+    <meta name="author" content="Milhouse">
+    
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VPHLWHRT81"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPHLWHRT81"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-VPHLWHRT81');
-</script>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+      gtag('config', 'G-VPHLWHRT81');
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="IMG_7231.png" alt="Imagem do Milhouse" style="max-width: 100%; height: auto;">
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Blog do Milhouse</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1>Bem-vindo ao Blog do Milhouse!</h1>
+            <p>Um espaço para compartilhar reflexões, aventuras e momentos especiais da vida.</p>
+            <img src="IMG_7231.png" alt="Imagem do Milhouse" class="milhouse-image">
+        </section>
+
+        <section id="posts" class="blog-posts">
+            <h2>Últimos Posts</h2>
+            
+            <article class="post-preview">
+                <h3>Bem-vindo ao meu blog!</h3>
+                <div class="post-meta">Publicado em: Janeiro 2025</div>
+                <p>Este é o primeiro post do Blog do Milhouse! Aqui vou compartilhar minhas reflexões sobre a vida, aventuras, descobertas e tudo aquilo que considero interessante e vale a pena ser compartilhado. Fique à vontade para explorar e voltar sempre para conferir as novidades!</p>
+            </article>
+
+            <article class="post-preview">
+                <h3>Sobre este espaço</h3>
+                <div class="post-meta">Publicado em: Janeiro 2025</div>
+                <p>Este blog foi criado com a intenção de ser um espaço pessoal onde posso expressar meus pensamentos e compartilhar experiências. Utilizando o GitHub Pages, consegui criar um ambiente simples, mas funcional, para publicar conteúdo regularmente.</p>
+            </article>
+
+            <article class="post-preview">
+                <h3>Próximos projetos</h3>
+                <div class="post-meta">Publicado em: Janeiro 2025</div>
+                <p>Tenho algumas ideias interessantes para os próximos posts: reflexões sobre tecnologia, experiências pessoais, dicas úteis e talvez alguns projetos criativos. O blog está em constante evolução, então sempre haverá algo novo por aqui!</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blog do Milhouse. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
