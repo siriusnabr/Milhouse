@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog do Milhouse - Reflexões e Aventuras</title>
-    <meta name="description" content="Blog do Milhouse - Um espaço para compartilhar reflexões, aventuras e momentos especiais da vida.">
-    <meta name="keywords" content="Milhouse, blog, reflexões, aventuras, vida">
+    <title>Milhouse Tech Blog - AWS e Tecnologia</title>
+    <meta name="description" content="Blog técnico especializado em serviços AWS, cloud computing e boas práticas de TI. Conteúdo para profissionais de tecnologia.">
+    <meta name="keywords" content="AWS, cloud computing, EC2, S3, Lambda, DevOps, TI, tecnologia, infraestrutura">
     <meta name="author" content="Milhouse">
     
     <!-- Google tag (gtag.js) -->
@@ -23,12 +23,13 @@
 <body>
     <header>
         <div class="header-container">
-            <a href="#" class="logo">Blog do Milhouse</a>
+            <a href="#" class="logo">Milhouse Tech</a>
             <nav>
                 <ul>
                     <li><a href="#home">Início</a></li>
                     <li><a href="#about">Sobre</a></li>
-                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#posts">Artigos</a></li>
+                    <li><a href="#services">Serviços AWS</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
@@ -37,36 +38,105 @@
 
     <main>
         <section id="home" class="hero-section">
-            <h1>Bem-vindo ao Blog do Milhouse!</h1>
-            <p>Um espaço para compartilhar reflexões, aventuras e momentos especiais da vida.</p>
-            <img src="IMG_7231.png" alt="Imagem do Milhouse" class="milhouse-image">
+            <h1>Milhouse Tech Blog</h1>
+            <p>Especializado em Amazon Web Services (AWS), cloud computing e boas práticas de TI para profissionais de tecnologia.</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <h3>☁️ Cloud Computing</h3>
+                    <p>Guias e tutoriais sobre AWS</p>
+                </div>
+                <div class="feature">
+                    <h3>🔧 DevOps</h3>
+                    <p>Automação e melhores práticas</p>
+                </div>
+                <div class="feature">
+                    <h3>🚀 Infraestrutura</h3>
+                    <p>Soluções escaláveis e eficientes</p>
+                </div>
+            </div>
         </section>
 
         <section id="posts" class="blog-posts">
-            <h2>Últimos Posts</h2>
+            <h2>Artigos Técnicos</h2>
             
             <article class="post-preview">
-                <h3>Bem-vindo ao meu blog!</h3>
+                <h3>Introdução aos Serviços Core da AWS</h3>
                 <div class="post-meta">Publicado em: Janeiro 2025</div>
-                <p>Este é o primeiro post do Blog do Milhouse! Aqui vou compartilhar minhas reflexões sobre a vida, aventuras, descobertas e tudo aquilo que considero interessante e vale a pena ser compartilhado. Fique à vontade para explorar e voltar sempre para conferir as novidades!</p>
+                <p>A Amazon Web Services (AWS) oferece uma ampla gama de serviços em nuvem que revolucionaram a forma como as empresas gerenciam sua infraestrutura de TI. Neste artigo, vamos explorar os principais serviços que todo profissional de TI deve conhecer: <strong>EC2</strong> para computação virtual, <strong>S3</strong> para armazenamento de objetos, e <strong>Lambda</strong> para computação serverless. Estes três serviços formam a base de muitas arquiteturas modernas na nuvem.</p>
             </article>
 
             <article class="post-preview">
-                <h3>Sobre este espaço</h3>
+                <h3>Amazon EC2: Computação Elástica na Nuvem</h3>
                 <div class="post-meta">Publicado em: Janeiro 2025</div>
-                <p>Este blog foi criado com a intenção de ser um espaço pessoal onde posso expressar meus pensamentos e compartilhar experiências. Utilizando o GitHub Pages, consegui criar um ambiente simples, mas funcional, para publicar conteúdo regularmente.</p>
+                <p>O Amazon Elastic Compute Cloud (EC2) é um dos serviços mais fundamentais da AWS, fornecendo capacidade de computação redimensionável na nuvem. Com o EC2, você pode iniciar instâncias virtuais em minutos, escolhendo entre diversos tipos de instâncias otimizadas para diferentes cargas de trabalho. As principais vantagens incluem: escalabilidade automática, pricing flexível (On-Demand, Reserved, Spot), e integração nativa com outros serviços AWS como EBS, VPC e IAM.</p>
             </article>
 
             <article class="post-preview">
-                <h3>Próximos projetos</h3>
+                <h3>Amazon S3: Armazenamento Durável e Escalável</h3>
                 <div class="post-meta">Publicado em: Janeiro 2025</div>
-                <p>Tenho algumas ideias interessantes para os próximos posts: reflexões sobre tecnologia, experiências pessoais, dicas úteis e talvez alguns projetos criativos. O blog está em constante evolução, então sempre haverá algo novo por aqui!</p>
+                <p>O Amazon Simple Storage Service (S3) é uma solução de armazenamento de objetos que oferece durabilidade de 99.999999999% (11 9's) e disponibilidade de 99.99%. O S3 é ideal para backup, arquivamento, distribuição de conteúdo, análise de dados e hospedagem de sites estáticos. Com classes de armazenamento como Standard, Infrequent Access, Glacier e Deep Archive, você pode otimizar custos baseado nos padrões de acesso aos seus dados.</p>
             </article>
+
+            <article class="post-preview">
+                <h3>AWS Lambda: Computação Serverless</h3>
+                <div class="post-meta">Publicado em: Janeiro 2025</div>
+                <p>O AWS Lambda revoluciona o desenvolvimento de aplicações ao permitir executar código sem provisionar ou gerenciar servidores. Você paga apenas pelo tempo de computação consumido, com cobrança por milissegundo. O Lambda suporta múltiplas linguagens (Python, Node.js, Java, C#, Go, Ruby) e se integra perfeitamente com outros serviços AWS como API Gateway, DynamoDB, S3 e CloudWatch. É ideal para APIs, processamento de dados, automação e arquiteturas orientadas a eventos.</p>
+            </article>
+
+            <article class="post-preview">
+                <h3>Boas Práticas de Segurança na AWS</h3>
+                <div class="post-meta">Publicado em: Janeiro 2025</div>
+                <p>A segurança na AWS segue o modelo de responsabilidade compartilhada. Enquanto a AWS protege a infraestrutura, você é responsável por proteger seus dados e aplicações. Principais práticas incluem: usar IAM para controle de acesso granular, habilitar MFA, criptografar dados em trânsito e em repouso, configurar VPCs adequadamente, implementar logging com CloudTrail, e usar AWS Config para conformidade. O AWS Security Hub centraliza alertas de segurança de múltiplos serviços.</p>
+            </article>
+        </section>
+
+        <section id="about" class="blog-posts">
+            <h2>Sobre o Blog</h2>
+            <p>O Milhouse Tech Blog é dedicado a profissionais de TI que desejam se aprofundar no ecossistema Amazon Web Services (AWS) e nas melhores práticas de cloud computing. Nosso conteúdo abrange desde conceitos básicos até implementações avançadas, sempre com foco prático e aplicável no dia a dia profissional.</p>
+            
+            <h3>Nosso Foco</h3>
+            <ul>
+                <li><strong>Serviços AWS Core:</strong> EC2, S3, Lambda, RDS, VPC e mais</li>
+                <li><strong>DevOps e Automação:</strong> CloudFormation, CodePipeline, Terraform</li>
+                <li><strong>Segurança e Compliance:</strong> IAM, Security Hub, GuardDuty</li>
+                <li><strong>Arquiteturas:</strong> Microserviços, Serverless, Containers</li>
+                <li><strong>Otimização de Custos:</strong> Estratégias para reduzir gastos na nuvem</li>
+            </ul>
+        </section>
+
+        <section id="services" class="blog-posts">
+            <h2>Principais Serviços AWS</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🖥️ Amazon EC2</h3>
+                    <p>Computação escalável e flexível na nuvem com instâncias virtuais configuráveis.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🗄️ Amazon S3</h3>
+                    <p>Armazenamento de objetos durável, disponível e altamente escalável.</p>
+                </div>
+                <div class="service-card">
+                    <h3>⚡ AWS Lambda</h3>
+                    <p>Computação serverless que executa código sem gerenciar servidores.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🗃️ Amazon RDS</h3>
+                    <p>Banco de dados relacionais gerenciados com alta disponibilidade.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🌐 Amazon VPC</h3>
+                    <p>Rede virtual privada isolada na nuvem AWS com controle total.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🔄 AWS CloudFormation</h3>
+                    <p>Infraestrutura como código para provisionar recursos AWS.</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Blog do Milhouse. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Milhouse Tech Blog. Especializado em AWS e Tecnologia.</p>
     </footer>
 </body>
 </html>

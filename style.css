@@ -90,14 +90,92 @@ main {
     margin-bottom: 2rem;
 }
 
-.milhouse-image {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    margin: 2rem 0;
+.hero-features {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.feature {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 250px;
+    border: 2px solid #e9ecef;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    border-color: #3498db;
+}
+
+.feature h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.feature p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.service-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
+    border-color: #3498db;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.service-card p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* About section styling */
+#about ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+#about li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+#about h3 {
+    color: #2c3e50;
+    margin: 1.5rem 0 1rem 0;
+}
+
 
 /* Blog posts section */
 .blog-posts {
@@ -166,6 +244,20 @@ footer {
     
     .hero-section {
         padding: 2rem;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .feature {
+        min-width: auto;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
     main {
